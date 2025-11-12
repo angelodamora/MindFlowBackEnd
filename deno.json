@@ -1,5 +1,5 @@
 {
   "tasks": {
-    "build": "deno run --allow-net --allow-env --allow-read backend-api.js"
+    "start": "deno run --allow-net --allow-env --allow-read backend-api.js"
   }
 }
