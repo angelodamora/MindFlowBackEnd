@@ -13,7 +13,7 @@ import { createClient } from 'npm:@supabase/supabase-js@2.39.0';
 const supabaseUrl = Deno.env.get('SUPABASE_URL');
 const supabaseKey = Deno.env.get('SUPABASE_SERVICE_KEY');
 const JWT_SECRET = Deno.env.get('JWT_SECRET') || 'dev-secret-change-in-production';
-const PORT = parseInt(Deno.env.get('PORT') || '8000');
+const PORT = parseInt(Deno.env.get('PORT'));
 
 // (Stesso controllo di configurazione)
 if (!supabaseUrl || !supabaseKey) {
